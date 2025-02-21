@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "147c5934-b5c5-aacf-06d8-b62d94d6e9fe",
+    "Name": "DelLimusineCarBodyType",
+    "DBEngineType": 0,
+    "InstallType": 2,
+    "ModifiedOnUtc": "\/Date(1739987902000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}

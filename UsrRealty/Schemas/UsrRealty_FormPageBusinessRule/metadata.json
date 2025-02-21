@@ -1,0 +1,73 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "966de821-993c-47ce-b85e-65274500cff5",
+      "A2": "UsrRealty_FormPageBusinessRule",
+      "A5": "9d478cee-b8eb-4c96-a132-1372ab844278",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "35f5d165-af7a-478b-9688-c54002eb9f6e",
+      "B8": "8.2.2.1859",
+      "AD1": "cd48b798-cbff-49c3-9368-da8ac06a5337",
+      "AD2": "ClientUnitSchemaManager",
+      "AD3": "BusinessRule",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "JI0": "Terrasoft.Core.BusinessRules.BusinessRules",
+        "BRS1": [
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "aab52113-219e-4329-4df4-571a66bb6755",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "fc94e2e5-ba74-ef90-2b5e-6185456ff7cc",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+                  "UId": "3b0ef446-8e91-514e-b4cd-3bfb5018ce33",
+                  "BGC1": 1,
+                  "BGC2": [
+                    {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                      "UId": "8de2c98e-6227-8ca3-bbb5-8cbc78539474",
+                      "BCO1": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                        "UId": "4837f3bf-77dd-153f-9ed6-a67aeffe65c2",
+                        "BRE1": "Lookup",
+                        "BRE2": "AttributeValue",
+                        "BRX1": "PDS_UsrType_d3qanwv"
+                      },
+                      "BCO3": 1
+                    }
+                  ]
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionShowElement",
+                    "UId": "42b1c0c8-2603-cc4f-4c9a-9db8b98cf754",
+                    "BRA4": "Input_fwk6mi8"
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "9b18d2cb-a8b4-b5ab-b055-5df9638770b9",
+                "BRT2": 2
+              },
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "846011ca-d687-c1e0-9287-905daec329ef",
+                "BRT1": "PDS_UsrType_d3qanwv"
+              }
+            ],
+            "BR3": "BusinessRule_3cca301"
+          }
+        ]
+      }
+    }
+  }
+}
