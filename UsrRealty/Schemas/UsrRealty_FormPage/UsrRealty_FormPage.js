@@ -16,6 +16,33 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "merge",
+				"name": "GeneralInfoTab",
+				"values": {
+					"iconPosition": "only-text"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "GeneralInfoTabContainer",
+				"values": {
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"visible": true,
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"alignItems": "stretch"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "CardToggleTabPanel",
 				"values": {
 					"styleType": "default",
@@ -127,6 +154,29 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Commision",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 4,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrCommision_j6hrvt3",
+					"labelPosition": "auto",
+					"control": "$PDS_UsrCommision_j6hrvt3",
+					"visible": true,
+					"readonly": true,
+					"placeholder": "",
+					"tooltip": ""
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -252,6 +302,33 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "Country",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 3,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrCountry_v2jnz9c",
+					"labelPosition": "auto",
+					"control": "$PDS_UsrCountry_v2jnz9c",
+					"listActions": [],
+					"showValueAsLink": true,
+					"controlActions": [],
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "Number",
 				"values": {
 					"layoutConfig": {
@@ -272,7 +349,254 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "City",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 4,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrCity_m6uv65t",
+					"labelPosition": "auto",
+					"control": "$PDS_UsrCity_m6uv65t",
+					"listActions": [],
+					"showValueAsLink": true,
+					"controlActions": [],
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "CommisionPercent",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"row": 4,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrOfferTypeUsrComissionPercent_3r8fg4e",
+					"control": "$PDS_UsrOfferTypeUsrComissionPercent_3r8fg4e",
+					"readonly": true,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_3lu57ey",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"alignItems": "stretch",
+					"layoutConfig": {
+						"column": 1,
+						"row": 5,
+						"colSpan": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_lef5xlw",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 6,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"alignItems": "stretch"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "ContactTypesChart",
+				"values": {
+					"type": "crt.ChartWidget",
+					"config": {
+						"title": "#ResourceString(ContactTypesChart_title)#",
+						"color": "green",
+						"theme": "full-fill",
+						"scales": {
+							"stacked": false,
+							"xAxis": {
+								"name": "",
+								"formatting": {
+									"type": "string",
+									"maxLinesCount": 2,
+									"maxLineLength": 10
+								}
+							},
+							"yAxis": {
+								"name": "",
+								"formatting": {
+									"type": "number",
+									"thousandAbbreviation": {
+										"enabled": true
+									}
+								}
+							}
+						},
+						"series": [
+							{
+								"color": "burnt-coral",
+								"type": "bar",
+								"label": "#ResourceString(ContactTypesChart_label)#",
+								"legend": {
+									"enabled": false
+								},
+								"data": {
+									"providing": {
+										"attribute": "ChartWidget_nunln48_SeriesData_0",
+										"schemaName": "Contact",
+										"filters": {
+											"filter": {
+												"items": {
+													"columnIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "Type"
+														}
+													}
+												},
+												"logicalOperation": 0,
+												"isEnabled": true,
+												"filterType": 6,
+												"rootSchemaName": "Contact"
+											},
+											"filterAttributes": []
+										},
+										"aggregation": {
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 1,
+													"functionArgument": {
+														"expressionType": 0,
+														"columnPath": "Id"
+													},
+													"functionType": 2,
+													"aggregationType": 1,
+													"aggregationEvalType": 2
+												}
+											}
+										},
+										"dependencies": [],
+										"rowCount": 50,
+										"grouping": {
+											"type": "by-value",
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 0,
+													"columnPath": "Type"
+												}
+											}
+										}
+									},
+									"formatting": {
+										"type": "number",
+										"decimalSeparator": ".",
+										"decimalPrecision": 0,
+										"thousandSeparator": ","
+									}
+								},
+								"dataLabel": {
+									"display": true
+								}
+							}
+						],
+						"seriesOrder": {
+							"type": "by-grouping-value",
+							"direction": 1
+						},
+						"layout": {}
+					},
+					"sectionBindingColumnRecordId": "$Id",
+					"visible": false,
+					"layoutConfig": {
+						"column": 1,
+						"row": 1,
+						"colSpan": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_lef5xlw",
+				"propertyName": "items",
+				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -321,6 +645,26 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"modelConfig": {
 							"path": "PDS.UsrComment_"
 						}
+					},
+					"PDS_UsrCountry_v2jnz9c": {
+						"modelConfig": {
+							"path": "PDS.UsrCountry"
+						}
+					},
+					"PDS_UsrCity_m6uv65t": {
+						"modelConfig": {
+							"path": "PDS.UsrCity"
+						}
+					},
+					"PDS_UsrCommision_j6hrvt3": {
+						"modelConfig": {
+							"path": "PDS.UsrCommision"
+						}
+					},
+					"PDS_UsrOfferTypeUsrComissionPercent_3r8fg4e": {
+						"modelConfig": {
+							"path": "PDS.UsrOfferTypeUsrComissionPercent_3r8fg4e"
+						}
 					}
 				}
 			},
@@ -353,7 +697,13 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"PDS": {
 						"type": "crt.EntityDataSource",
 						"config": {
-							"entitySchemaName": "UsrRealty"
+							"entitySchemaName": "UsrRealty",
+							"attributes": {
+								"UsrOfferTypeUsrComissionPercent_3r8fg4e": {
+									"path": "UsrOfferType.UsrComissionPercent",
+									"type": "ForwardReference"
+								}
+							}
 						},
 						"scope": "page"
 					}
@@ -373,7 +723,23 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				/* The custom implementation of the system query handler. */
+				handler: async (request, next) => {
+      					if (request.attributeName === 'PDS_UsrPrice_uukiax6' || 				             // if price changed
+					   request.attributeName === 'PDS_UsrOfferTypeUsrComissionPercent_3r8fg4e' ) { 		// or percent changed
+							var price = await request.$context.PDS_UsrPrice_uukiax6;
+							var percent = await request.$context.PDS_UsrOfferTypeUsrComissionPercent_3r8fg4e;
+							var commission = price * percent / 100;
+							request.$context.PDS_UsrCommision_j6hrvt3 = commission;
+					}
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
 			}
+
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/

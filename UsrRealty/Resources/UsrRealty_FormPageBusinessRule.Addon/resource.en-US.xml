@@ -2,6 +2,8 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.72dbc8b0-b255-8abb-daff-3c087c849f29.Caption" Value="Show elements: Contacts by types" />
+			<Item Name="AddonConfig.Rules.8a071dd3-e53f-6545-f0d4-e7980a1529b8.Caption" Value="Make elements required: Manager" />
 			<Item Name="AddonConfig.Rules.aab52113-219e-4329-4df4-571a66bb6755.Caption" Value="Show elements: Comment_" />
 			<Item Name="Caption" Value="Realty form page (Business rules)" />
 		</Items>
